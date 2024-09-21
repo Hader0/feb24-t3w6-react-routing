@@ -27,10 +27,17 @@ export default function Navbar() {
                 <h3>Contact</h3>
             </NavLink>
 
-            <NavLink to={"/projects"} className={({isActive}) => {
+            {/* End makes sure both Projects & Pokemon Project link's aren't highlighted */}
+            <NavLink end to={"/projects"} className={({isActive}) => {
                 return isActive ? "active" : ""
             }}>
                 <h3>Projects</h3>
+            </NavLink>
+
+            <NavLink to={"/projects/pokemon"} className={({isActive}) => {
+                return isActive ? "active" : ""
+            }}>
+                <h3>Pokemon Project</h3>
             </NavLink>
 
         </nav>
