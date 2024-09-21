@@ -22,6 +22,7 @@ export default class RedirectButton extends React.Component {
                     Go to Homepage
                 </button>
 
+                {/* If True (If shouldRedirect is toggled true), then redirect */}
                 {this.state.shouldRedirect && <Navigate to={"/"} />}
 
             </>
