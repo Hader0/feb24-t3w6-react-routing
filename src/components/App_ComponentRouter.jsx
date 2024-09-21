@@ -1,9 +1,9 @@
 import {BrowserRouter, Route,Routes} from 'react-router-dom';
-import './App.css';
-import HomePage from './pages/HomePage';
-import ContactPage from './pages/ContactPage';
-import AboutPage from './pages/AboutPage';
-import Navbar from './components/Navbar';
+import '../styles/App.css';
+import HomePage from '../pages/HomePage';
+import ContactPage from '../pages/ContactPage';
+import AboutPage from '../pages/AboutPage';
+import Navbar from './Navbar';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
 
       <BrowserRouter>
 
-        {/* This is our Navbar */}
+        {/* This is the Navbar */}
         <Navbar />
 
         <Routes>
