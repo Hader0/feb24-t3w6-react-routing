@@ -3,6 +3,7 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -10,6 +11,10 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
+
+        {/* This is our Navbar */}
+        <Navbar />
+
         <Routes>
           <Route path='/' element={ <HomePage />} />
           <Route path='/about' element={ <AboutPage />} />
